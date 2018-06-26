@@ -12,6 +12,7 @@ get '/say/:number/:phrase' do
 #   "#{@phrase}"
 #   times += 1
 # end 
+params 
 end
 
 end 
