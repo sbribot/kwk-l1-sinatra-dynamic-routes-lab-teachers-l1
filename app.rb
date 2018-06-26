@@ -10,6 +10,7 @@ get '/say/number/phrase' do
 times = 0 
 until @number == times do
   "#{@phrase}"
+  times += 1
 end 
 end
 
