@@ -5,7 +5,7 @@ class App < Sinatra::Base
 
 get '/say/:number/:phrase' do
   times = 0 
-  until params[:number] >= times do 
+  until params[:number].to_i >= times do 
     params[:phrase]
   end 
 end
