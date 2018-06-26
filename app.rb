@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-require_relative "/models/sample.rb"
+require_relative "models/sample.rb"
 
 class App < Sinatra::Base
   # Write your code here!
