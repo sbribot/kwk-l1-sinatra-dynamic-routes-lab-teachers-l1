@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require '/models/sample'
 
 class App < Sinatra::Base
   # Write your code here!
