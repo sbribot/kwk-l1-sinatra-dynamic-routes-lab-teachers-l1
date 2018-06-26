@@ -7,14 +7,16 @@ class App < Sinatra::Base
 get '/say/:number/:phrase' do
   @number = params[:number].to_i
   @phrase = params[:phrase]
-  def say_phrase(@number, @phrase)
+  number = @number
+  phrase = @phrase
+  def say_phrase(number, phrase)
  times = 0 
-  until @number.to_i >= times do 
-    print "#{@phrase}"
+  until number.to_i >= times do 
+    print "#{phrase}"
     times += 1
   end 
 end 
-  say_phrase(@number, @phrase)
+  say_phrase(number, phrase)
 end
 
 end 
