@@ -9,7 +9,7 @@ get '/say/:number/:phrase' do
   phrase = params[:phrase]
 times = 0 
 until number >= times do
-  "#{phrase}"
+  print "#{phrase}"
   times += 1
 end
 end
