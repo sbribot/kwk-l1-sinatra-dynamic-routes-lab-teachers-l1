@@ -10,7 +10,7 @@ get '/say/:number/:phrase' do
   number = @number
   phrase = @phrase
   def say_phrase(number, phrase)
- times = 0 
+  times = 0 
   until number.to_i >= times do 
     print "#{phrase}"
     times += 1
