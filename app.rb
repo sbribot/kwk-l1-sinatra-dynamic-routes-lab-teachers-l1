@@ -6,7 +6,7 @@ class App < Sinatra::Base
 get '/say/:number/:phrase' do
   @times = 0 
   until params[:number].to_i >= @times do 
-    print "#{params[:phrase]}"
+    "#{params[:phrase]}"
     @times += 1
   end 
 end
